@@ -5,6 +5,7 @@ module.exports = {
     jquery: true
   },
   globals: {
-    Notification: true
+    Notification: true,
+    MilkCocoa: true
   }
 };
