@@ -1,11 +1,15 @@
 (function() {
   'use strict';
 
-  var permission;
+  var permission = Notification.permission;
+
+  $(document).ready(function() {
+    $('#permission').text('[' + permission + ']');
+  });
 
   Notification.requestPermission(function(permission_) {
-    $('#permision').text(permission_);
     permission = permission_;
+    $('#permission').text(permission);
   });
 
   $(document).on('click', '#notify', function() {
