@@ -1,11 +1,15 @@
 (function() {
   'use strict';
 
-  Notification.requestPermission(function() {
+  var permission;
+
+  Notification.requestPermission(function(permission_) {
+    $('#permision').text(permission_);
+    permission = permission_;
   });
 
   $(document).on('click', '#notify', function() {
-    if (Notification.permission === 'granted') {
+    if (permission === 'granted') {
       var notification = new Notification('通知', {
         body: 'メールが来てません!',
         icon: 'images/icon.png',
