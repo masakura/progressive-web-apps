@@ -1,4 +1,12 @@
 {
-  "name": "Push Notifications codelab",
+  "lang": "ja",
+  "name": "Progressive Web Apps",
+  "short_name": "progre",
+  "icons": [{
+    "src": "images/icon.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }],
+  "start_url": "https://masakura.github.io/progressive-web-apps/",
   "gcm_sender_id": "396212782346"
 }
