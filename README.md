@@ -8,6 +8,8 @@
   - ServiceWorker 経由での Notification
 * [MDN Push API](https://developer.mozilla.org/ja/docs/Web/API/Push_API)
   - 関連情報にデモあり
+* [初めてのService Worker （Push API編）](http://qiita.com/k-taro/items/26dc55281d414babd495)
+* [ChromeでW3C Push APIを使ってみた](http://qiita.com/tomoyukilabs/items/8fffb4280c1914b6aa3d)
 
 
 ## メモ
