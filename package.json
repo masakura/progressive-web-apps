@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files='*.html,scripts/*.js'",
     "deploy": "git checkout gh-pages && git merge master && git push && git checkout master"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.11.1",
     "eslint": "^2.2.0",
     "eslint-config-google": "^0.4.0"
   }
