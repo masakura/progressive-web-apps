@@ -50,7 +50,7 @@ https://www.w3.org/TR/notifications/
 
 
 ### Web App Manifest
-ウェブアプリをプリカするためのマニフェストファイル。
+ウェブアプリをアプリ化するためのマニフェストファイル。
 
 ```json
 {
