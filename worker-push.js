@@ -1,5 +1,3 @@
-'use strict';
-
 self.addEventListener('push', function(event) {
   console.log('Push message received', event);
 

@@ -96,16 +96,18 @@ if ('serviceWorker' in navigator) {
     console.log('Service Worker is supported');
     navigator.serviceWorker.register('sw.js').then(function(reg) {
         console.log(':^)', reg);
-        setTimeout(function() {
-            reg.pushManager.subscribe({
-                userVisibleOnly: true
-            }).then(function(sub) {
-                console.log('endpoint:', sub.endpoint);
-            }, 1000);
-        });
     }).catch(function(error) {
         console.log(':^(', error);
     });
+
+    navigator.serviceWorker.register('sw.js').ready.then(function(reg) {
+        reg.pushManager.subscribe({
+            userVisibleOnly: true
+        }).then(function(sub) {
+            console.log('endpoint:', sub.endpoint);
+        });
+    });
+
 }
 ```
 
